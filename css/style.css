@@ -4,8 +4,9 @@
   margin: 0;
 }
 
-html{
+html {
   background-color: rgb(29, 66, 29);
+  color: #fff;
 }
 .body {
   zoom: 80%;
@@ -18,7 +19,7 @@ html{
   flex-direction: column;
 }
 
-.scoreBoard{
+.scoreBoard {
   display: flex;
   flex-direction: row;
   padding: 25px 100px;
@@ -28,7 +29,7 @@ html{
   font-size: 39px;
   font-weight: bold;
   color: #fff;
-  border: 5px solid #76BA99;
+  border: 5px solid #76ba99;
   background-color: black;
   font-family: "New Tegomin", serif;
   margin-right: 10px;
@@ -41,7 +42,7 @@ html{
   font-size: 39px;
   font-weight: bold;
   font-family: "New Tegomin", serif;
-  border: 5px solid #76BA99;
+  border: 5px solid #76ba99;
   background-color: black;
 }
 
@@ -50,7 +51,7 @@ html{
   background: #111;
   width: 90vmin;
   height: 92vmin;
-  border: 5px solid #76BA99;
+  border: 5px solid #76ba99;
   display: grid;
   grid-template-rows: repeat(28, 1fr);
   grid-template-columns: repeat(28, 1fr);
@@ -87,13 +88,9 @@ html{
   text-decoration: none;
   color: white;
 }
-.maker a :hover {
-  color: gray;
-}
-.music{
+.music {
   position: absolute;
-  
-  top:10px;
+  top: 10px;
   left: 10px;
   padding: 10px;
   height: 20px;
@@ -102,6 +99,6 @@ html{
   color: #fff;
   cursor: pointer;
 }
-.music :hover{
+.music :hover {
   color: gray;
 }

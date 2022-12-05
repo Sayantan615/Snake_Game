@@ -25,7 +25,7 @@ function main(ctime) {
   }
   lastPaintTime = ctime;
   gameEngine();
-  // console.log(ctime);
+  console.log(ctime);
 }
 function isCollide(snakeArr) {
   // If you bump into yourself
@@ -53,7 +53,7 @@ function gameEngine() {
     }
     direction = { x: 0, y: 0 };
     alert("Game Over. Pause any button to play again!");
-    snakeArr = [{ x: 13, y: 15 }];
+    snakeArr = [{ x: 13, y: 15 }];//head position will return to starting position
 
     musicSound.play();
 
@@ -154,11 +154,13 @@ window.addEventListener("keydown", (e) => {
 
 function togglePlay() {
   if (musicSound.paused) {
-    return musicSound.play();
     document.querySelector(".music").innerHTML =
-      "<i class='fa-solid fa-music-slash'></i>";
-  } else {
+    '<i class="fa-solid fa-music-slash"></i>';
+    // ! change the inner html
+        return musicSound.play();
+    } else {
     return musicSound.pause();
   }
   // return musicSound.paused ? musicSound.play() : musicSound.pause();
 }
+
